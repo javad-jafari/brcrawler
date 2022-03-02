@@ -1,0 +1,25 @@
+<table>
+    <tr>
+      <th>Company</th>
+      <th>time_update</th>
+      <th>last_value</th>
+      <th>change</th>
+      <th>precent</th>
+      <th>max_value</th>
+      <th>min_value</th>
+    </tr>
+    {% for cluster in clusters %}
+    <tr>
+      <td>{{cluster}}</td>
+      <td>{{cluster.propagate_date}}</td>
+      <td>{{cluster.last_value}}</td>
+      <td>{{cluster.change}}</td>
+      <td>{{cluster.precent}}</td>
+      <td>{{cluster.max_value}}</td>
+      <td>{{cluster.min_value}}</td>
+    </tr>
+    {% endfor %}
+
+  </table> 
+
+
