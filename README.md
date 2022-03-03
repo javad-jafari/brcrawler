@@ -21,7 +21,7 @@ clone project from github
 
 make virtualenv and activate it :
 ```
-source venv/bin/actiate
+source venv/bin/activate
 ```
 
 install requierments from req.text :
